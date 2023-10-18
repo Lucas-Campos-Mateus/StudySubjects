@@ -1,7 +1,8 @@
 create table student (
-    rgm int primary key,
-    firstName text not null,
-    lastName text not null,
-    email text not null,
-    active boolean default true
+    rgm TEXT NOT NULL,
+    first_name TEXT not null,
+    last_name TEXT not null,
+    email TEXT not null,
+    active boolean default true,
+    PRIMARY KEY (rgm(255))
 );
